@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+body, html{
+    background-color: #14213d;
+    height: 100%;
+    margin: 0;
+}
+
+select{
+    border-radius: 8px;
+    padding: 12px;
+    color: #666;
+    font-size: 14px;
+    border: 0;
+}
+
+select:active, select:focus, select:focus-visible, input:focus-visible {
+    border: 0;
+    outline: none;
+}
+
+#from, #to{
+    margin-bottom: 15px;
+}
+#convert{
+    background-color: #14213d;
+    border-radius: 8px;
+    padding: 10px 50px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 12px;
+    border: 0;
+    cursor: pointer;
+    align-self: center;
+    margin-bottom: 10px;
+}
+#convert:hover{
+    background-color: #324671;
+}
+
+label{
+    line-height: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+label::after{
+    content:":";
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.main__inner {
+    background-color: #dee2e6;
+    border-radius: 20px;
+    min-height: 400px;
+    max-width: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__inner h1{
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #14213d;
+    margin-bottom: 30px;
+}
+
+.currency {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.actions{
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inputSum {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputSum label{
+    margin-bottom: 12px;
+}
+
+#sum{
+    border-radius: 8px;
+    padding: 12px;
+    color: #666;
+    font-size: 14px;
+    border: 0;
+}
+
+#result{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.loader {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 10px auto 0;
+    color: #ffcf0f;
+    animation: animloader 1s linear infinite alternate;
+}
+
+.hidden{
+    display: none;
+}
+
+
+@keyframes animloader {
+    0% {
+        box-shadow: -38px -12px, -14px 0, 14px 0, 38px 0;
+    }
+
+    33% {
+        box-shadow: -38px 0px, -14px -12px, 14px 0, 38px 0;
+    }
+
+    66% {
+        box-shadow: -38px 0px, -14px 0, 14px -12px, 38px 0;
+    }
+
+    100% {
+        box-shadow: -38px 0, -14px 0, 14px 0, 38px -12px;
+    }
+}
+

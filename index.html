@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchange</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./js/index.js" defer></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="main__inner">
+            <h1>Currency exchange</h1>
+            <div class="actions hidden">
+                <div class="currency">
+                    <label for="from">From currency</label>
+                    <select id="from" required>
+                        
+                    </select>
+                    <label for="to">To currency</label>
+                    <select id="to" required></select>
+                    <label for="sum">Amount</label>
+                    <input type="number" min="0" id="sum">
+                </div>
+                <div class="inputSum">
+                    
+                </div>
+                <button id="convert">Exchange</button>
+                
+            </div>
+            <div id="result"></div>
+            <div class="loader"></div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
